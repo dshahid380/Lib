@@ -50,8 +50,7 @@ sqrtD decompose(vector<int> arr)
 		prefixData[i - 1] + sq.data[i]; 
 	} 
 	
-	sq.rdata.resize(blocks + 1, 
-			vector<int>(blocks + 1)); 
+	sq.rdata.resize(blocks + 1,vector<int>(blocks + 1)); 
 	
 	// Calculation of data between blocks 
 	for(int i = 0 ;i < blocks; i++) 
@@ -67,11 +66,9 @@ sqrtD decompose(vector<int> arr)
 } 
 
 // Sqaure root Decompostion at level3 
-vector<vector<sqrtD>> tripleDecompose(sqrtD sq1, 
-					sqrtD sq2,vector<int> &arr) 
+vector<vector<sqrtD>> tripleDecompose(sqrtD sq1, sqrtD sq2,vector<int> &arr) 
 { 
-	vector<vector<sqrtD>> sq(sq1.blocks, 
-					vector<sqrtD>(sq1.blocks)); 
+	vector<vector<sqrtD>> sq(sq1.blocks,vector<sqrtD>(sq1.blocks)); 
 	
 	int blk_idx1 = -1; 
 	
